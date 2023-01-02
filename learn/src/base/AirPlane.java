@@ -48,10 +48,11 @@ public class AirPlane {
         }
         int maxPlane = 0;
         int count = 0;
-        for (Map.Entry<Integer, Integer> entity : treemap.entrySet()) {
-            count += entity.getValue();
+        for (Integer value : treemap.values()) {
+            count += value;
             maxPlane = Math.max(maxPlane, count);
         }
         return maxPlane;
     }
+
 }
