@@ -21,7 +21,7 @@ public class AirPlane {
 
     public int countOfAirplanes(List<Interval> airplanes) {
         int count = 0;
-        List<Node> list = new ArrayList<Node>();
+        List<Node> list = new ArrayList<>();
         for (Interval interval : airplanes) {
             list.add(new Node(interval.start, 1));
             list.add(new Node(interval.end, -1));
