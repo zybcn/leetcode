@@ -21,8 +21,8 @@ public class Trie {
                 node.children[c - 'a'] = new TrieNode();
             }
             node = node.children[c - 'a'];
-            node.isWord = true;
         }
+        node.isWord = true;
     }
 
     public boolean search(String word) {
@@ -33,7 +33,7 @@ public class Trie {
             }
             node = node.children[c - 'a'];
         }
-        return true;
+        return node.isWord;
     }
 
     public boolean startsWith(String prefix) {
