@@ -6,7 +6,7 @@ package tree;
  */
 public class SymmetryTree {
     public boolean isSymmetric(TreeNode root) {
-        return check(root.left, root.right);
+        return check(root, root);
     }
 
     public boolean check(TreeNode p, TreeNode q) {
